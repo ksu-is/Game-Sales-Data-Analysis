@@ -1,14 +1,18 @@
 # Project Road Map for GameStat website
 
+x = unfinished
+
+c = Complete
+
 ## Sprint 1 
-- [x] Come up with Idea
-- [X] Find Inspiration and Videos on how to execute this task
-- [x] Find Data for Game Sales (kaggle)
-- [X] Start Programming the back end for the website 
+- [c] Come up with Idea
+- [c] Find Inspiration and Videos on how to execute this task
+- [c] Find Data for Game Sales (kaggle)
+- [c] Start Programming the outline for the website
 
 ## Sprint 2
 - [x] Import the data from Excel
-- [x] Begin Programming the front end for the website
+- [x] Begin Programming and setup the database for the website
 
 ## Sprint 3
 - [x] Finalize Programming
