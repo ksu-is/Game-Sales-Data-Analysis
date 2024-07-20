@@ -1,6 +1,6 @@
 # Project Road Map for GameStat website
 
-x = unfinished
+f = unfinished
 
 c = Complete
 
@@ -11,10 +11,10 @@ c = Complete
 - [c] Start Programming the outline for the website
 
 ## Sprint 2
-- [x] Import the data from Excel
-- [x] Begin Programming and setup the database for the website
-- [x] add pictures mkae the website look nice after the base website is complete.
+- [f] Import the data from Excel
+- [f] Begin Programming and setup the database for the website
+- [f] add pictures mkae the website look nice after the base website is complete.
 
 ## Sprint 3
-- [x] Finalize Programming
-- [x] Debug and Test Run Program
+- [f] Finalize Programming
+- [f] Debug and Test Run Program
