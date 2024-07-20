@@ -13,6 +13,7 @@ c = Complete
 ## Sprint 2
 - [x] Import the data from Excel
 - [x] Begin Programming and setup the database for the website
+- [x] add pictures mkae the website look nice after the base website is complete.
 
 ## Sprint 3
 - [x] Finalize Programming
