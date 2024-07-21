@@ -11,3 +11,5 @@ https://github.com/mshawn12/video-game-sales-analysis
 Update (7/11/2024): Finished the Navbar for the website and found the data for videogame sales.
 
 Update (7/13/2024): All the links in the Navbar have their own route and are functional.
+
+update (7/21/2024): 

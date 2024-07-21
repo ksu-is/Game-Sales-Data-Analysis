@@ -11,9 +11,9 @@ c = Complete
 - [c] Start Programming the outline for the website
 
 ## Sprint 2
-- [f] Import the data from Excel
-- [f] Begin Programming and setup the database for the website
-- [f] add pictures mkae the website look nice after the base website is complete.
+- [f] Import the data from Excel.
+- [f] Begin Programming and setup the database for the website.
+- [f] add pictures and make the website look nice.
 
 ## Sprint 3
 - [f] Finalize Programming
