@@ -8,8 +8,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///games.db'
 db = SQLAlchemy(app)
 
 class Games(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(200), nullable=False)
+    id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(200), nullable = False)
 
     def __repr__(self):
         return '<Game %r>' % self.id
