@@ -1,8 +1,14 @@
 h1{
-    color:white; 
+    color: white; 
     font-size: 60px;
 }
 
+p{
+    color: white;
+    font-size: 20px;
+}
+
 body{
-    background: rgb(65, 189, 234);
+    background-image: url('/static/images/lifestream.jpg');
+    background-size: 100% 100%;
 }
