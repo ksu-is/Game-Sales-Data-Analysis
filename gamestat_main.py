@@ -16,19 +16,19 @@ def action():
     return render_template('Action.html')
 
 @app.route('/adventure')
-def action_adventure():
+def adventure():
     return render_template('Adventure.html')
 
 @app.route('/role-playing')
-def Role_Playing():
+def role_playing():
     return render_template('Role-Playing.html')
 
 @app.route('/sports')
-def Sports():
+def sports():
     return render_template('Sports.html')
 
 @app.route('/misc')
-def Misc():
+def misc():
     return render_template('Misc.html')
 
 @app.route('/about')
