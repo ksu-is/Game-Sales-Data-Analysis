@@ -14,9 +14,10 @@ Update (7/13/2024): All the links in the Navbar have their own route and are fun
 
 Update (7/21/2024): Organizing Code to make it more readable. Doing the database tommorow.
 
-Update (7/22/2024): all data has been imported from excel and the database is implemented. Doing the final touches tommorow and editing tonight.
+Update (7/22/2024): All data has been imported from excel and the database is implemented. Doing the final touches tommorow and editing tonight.
 
 # Workcited:
+Asaniczka. “Video Game Sales 2024.” Kaggle, 29 Jan. 2024, www.kaggle.com/datasets/asaniczka/video-game-sales-2024?resource=download. 
 
 # Workcited for images:
 Staff, Polygon. “The 50 Best Games of 2020.” Polygon, 14 Dec. 2020, www.polygon.com/2020/12/14/22166004/best-games-2020-ps4-xbox-one-switch-pc-series-x.

@@ -56,7 +56,11 @@ def games():
 
 @app.route('/action')
 def action():
-    return render_template('Action.html')
+    page = request.args.get('page', 1, type=int)
+    per_page = 100
+    action_games_query = Games.query.filter_by(genre='Action')
+    action_games = action_games_query.paginate(page=page, per_page=per_page, error_out=False)
+    return render_template('Action.html', games=action_games)
 
 @app.route('/adventure')
 def adventure():
