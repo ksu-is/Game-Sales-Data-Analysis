@@ -49,34 +49,50 @@ def index():
 
 @app.route('/Games')
 def games():
-    page = request.args.get('page', 1, type=int)
+    page = request.args.get('page', 1, type = int)
     per_page = 100
-    games_list = Games.query.paginate(page=page, per_page=per_page, error_out=False)
-    return render_template('Games.html', games=games_list)
+    games_list = Games.query.paginate(page = page, per_page = per_page, error_out = False)
+    return render_template('Games.html', games = games_list)
 
 @app.route('/action')
 def action():
-    page = request.args.get('page', 1, type=int)
+    page = request.args.get('page', 1, type = int)
     per_page = 100
-    action_games_query = Games.query.filter_by(genre='Action')
-    action_games = action_games_query.paginate(page=page, per_page=per_page, error_out=False)
-    return render_template('Action.html', games=action_games)
+    action_games_query = Games.query.filter_by(genre = 'Action')
+    action_games = action_games_query.paginate(page = page, per_page = per_page, error_out = False)
+    return render_template('Action.html', games = action_games)
 
 @app.route('/adventure')
 def adventure():
-    return render_template('Adventure.html')
+    page = request.args.get('page', 1, type = int)
+    per_page = 100
+    adventure_games_query = Games.query.filter_by(genre = 'Adventure')
+    adventure_games = adventure_games_query.paginate(page = page, per_page = per_page, error_out = False)
+    return render_template('Adventure.html', games = adventure_games)
 
 @app.route('/role-playing')
 def role_playing():
-    return render_template('Role-Playing.html')
+    page = request.args.get('page', 1, type = int)
+    per_page = 100
+    roleplaying_games_query = Games.query.filter_by(genre = 'Role-Playing')
+    roleplaying_games = roleplaying_games_query.paginate(page = page, per_page = per_page, error_out = False)
+    return render_template('Role-Playing.html', games = roleplaying_games)
 
 @app.route('/sports')
 def sports():
-    return render_template('Sports.html')
+    page = request.args.get('page', 1, type = int)
+    per_page = 100
+    sports_games_query = Games.query.filter_by(genre = 'Sports')
+    sports_games = sports_games_query.paginate(page = page, per_page = per_page, error_out = False)
+    return render_template('Role-Playing.html', games = sports_games)
 
 @app.route('/misc')
 def misc():
-    return render_template('Misc.html')
+    page = request.args.get('page', 1, type = int)
+    per_page = 100
+    misc_games_query = Games.query.filter_by(genre = 'Misc')
+    misc_games = misc_games_query.paginate(page = page, per_page = per_page, error_out = False)
+    return render_template('Misc.html', games = misc_games)
 
 @app.route('/about')
 def about():
