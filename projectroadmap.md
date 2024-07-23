@@ -1,6 +1,6 @@
 # Project Road Map for GameStat website
 
-f = unfinished
+f = Unfinished
 
 c = Complete
 
