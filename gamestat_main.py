@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import pandas as pd
 
@@ -93,6 +93,23 @@ def misc():
     misc_games_query = Games.query.filter_by(genre = 'Misc')
     misc_games = misc_games_query.paginate(page = page, per_page = per_page, error_out = False)
     return render_template('Misc.html', games = misc_games)
+
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+    query = request.args.get('query')
+    page = request.args.get('page', 1, type = int)
+    per_page = 100
+    if query:
+        search_query = Games.query.filter(
+            (Games.title.ilike(f'%{query}%')) |
+            (Games.console.ilike(f'%{query}%')) |
+            (Games.genre.ilike(f'%{query}%'))
+        )
+        search_results = search_query.paginate(page=page, per_page = per_page, error_out = False)
+        return render_template('Search.html', games = search_results, query = query)
+    else:
+        return redirect(url_for('index'))
+
 
 @app.route('/about')
 def about():

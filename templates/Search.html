@@ -1,0 +1,45 @@
+{% extends 'Main.html' %}
+{% block content %}
+  <div class="container">
+    <h1>Search Results</h1>
+    <p>Results for "{{ query }}":</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Console</th>
+          <th>Genre</th>
+          <th>Critic Score</th>
+          <th>Total Sales (million)</th>
+          <th>Release Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for game in games.items %}
+        <tr>
+          <td>{{ game.id }}</td>
+          <td>{{ game.title }}</td>
+          <td>{{ game.console }}</td>
+          <td>{{ game.genre }}</td>
+          <td>{{ game.critic_score }}</td>
+          <td>{{ game.total_sales }}</td>
+          <td>{{ game.release_date }}</td>
+        </tr>
+        {% else %}
+        <tr>
+          <td colspan="7">No results found.</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="pagination">
+      {% if games.has_prev %}
+        <a href="{{ url_for('search', query=query, page=games.prev_num) }}">Previous</a>
+      {% endif %}
+      {% if games.has_next %}
+        <a href="{{ url_for('search', query=query, page=games.next_num) }}">Next</a>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
