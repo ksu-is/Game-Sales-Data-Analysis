@@ -2,19 +2,29 @@
 {% block content %}
 <div class="container">
   <h1>Games</h1>
-  <p>This is the Games page for GameStat. Here we provide information about our Games.</p>
+  <p>All of your favorite games in one place</p>
   <table class="table">
     <thead>
       <tr>
         <th>ID</th>
-        <th>Name</th>
+        <th>Title</th>
+        <th>Console</th>
+        <th>Genre</th>
+        <th>Critic Score</th>
+        <th>Total Sales(million)</th>
+        <th>Release Date</th>
       </tr>
     </thead>
     <tbody>
       {% for game in games.items %}
       <tr>
         <td>{{ game.id }}</td>
-        <td>{{ game.name }}</td>
+        <td>{{ game.title }}</td>
+        <td>{{ game.console }}</td>
+        <td>{{ game.genre }}</td>
+        <td>{{ game.critic_score }}</td>
+        <td>{{ game.total_sales }}</td>
+        <td>{{ game.release_date }}</td>
       </tr>
       {% endfor %}
     </tbody>
