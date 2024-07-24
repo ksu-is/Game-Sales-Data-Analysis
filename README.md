@@ -21,6 +21,8 @@ Update (7/23/2024): Finished allowing the user to filter the games by genre. Now
 # Workcited:
 Asaniczka. “Video Game Sales 2024.” Kaggle, 29 Jan. 2024, www.kaggle.com/datasets/asaniczka/video-game-sales-2024?resource=download. 
 
+Mark Otto, Jacob Thornton. “Bootstrap.” Bootstrap · The Most Popular HTML, CSS, and JS Library in the World., getbootstrap.com/. Accessed 24 July 2024. 
+
 # Workcited for images:
 Staff, Polygon. “The 50 Best Games of 2020.” Polygon, 14 Dec. 2020, www.polygon.com/2020/12/14/22166004/best-games-2020-ps4-xbox-one-switch-pc-series-x.
 
