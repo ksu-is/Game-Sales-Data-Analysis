@@ -16,5 +16,5 @@ c = Complete
 - [c] add pictures and make the website look nice.
 
 ## Sprint 3
-- [f] Finalize Programming
-- [f] Debug and Test Run Program
+- [c] Finalize Programming
+- [c] Debug and Test Run Program

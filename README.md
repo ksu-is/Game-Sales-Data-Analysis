@@ -18,6 +18,8 @@ Update (7/22/2024): All data has been imported from excel and the database is im
 
 Update (7/23/2024): Finished allowing the user to filter the games by genre. Now working on the search button and final touches.
 
+Update (7/24/2024): Part 1 of my vision for this project has been completed. Im presenting at 6:30pm today. More updates and changes to fully realize my vision will be coming in the future.
+
 # Workcited:
 Asaniczka. “Video Game Sales 2024.” Kaggle, 29 Jan. 2024, www.kaggle.com/datasets/asaniczka/video-game-sales-2024?resource=download. 
 
