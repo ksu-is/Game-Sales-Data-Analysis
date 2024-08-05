@@ -1,3 +1,4 @@
+import sys
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import pandas as pd
@@ -129,11 +130,15 @@ def about():
 
 # Main entry point of the application
 if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        file_path = sys.argv[1]
+    else:
+        file_path = 'vgchartz-2024.xlsx'  
+
     with app.app_context():
         db.drop_all()
         db.create_all()
         
-        # Import data from the specified Excel file
-        import_excel_data('c:/Users/leben/OneDrive/Documents/GitHub/Game-Sales-Data-Analysis/vgchartz-2024.xlsx')
+        import_excel_data(file_path)
         print("Database tables created and data imported.")
     app.run(debug=True)
